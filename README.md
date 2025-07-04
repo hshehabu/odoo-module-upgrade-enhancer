@@ -5,9 +5,7 @@ An Odoo module that enhances the module upgrade process by adding a convenient u
 ## Features
 
 - **Upgrade Button**: Adds "Upgrade" button to module kanban cards
-- **Smart Visibility**: Button only appears for installed modules
-- **Auto-reload**: Automatically refreshes interface after upgrade
-- **Permission Control**: Only system administrators can access
+- **Auto-reload**: Automatically refreshes to the apps page
 
 ## Installation
 
