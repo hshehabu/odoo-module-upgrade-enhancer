@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <record id="module_view_kanban_inherit" model="ir.ui.view">
+        <field name="name">module.kanban.views.inherit.upgrade</field>
+        <field name="model">ir.module.module</field>
+        <field name="inherit_id" ref="base.module_view_kanban"/>
+        <field name="arch" type="xml">
+            <xpath expr="//t[@t-name='card']/main/footer" position="inside">
+                <a t-if="record.state.raw_value == 'installed'" name="button_immediate_upgrade"
+                    type="object" role="menuitem" class="float-end"
+                    groups="base.group_system">
+                    <i class="fa fa-refresh me-1"/> Upgrade
+                </a>
+            </xpath>
+        </field>
+    </record>
+</odoo>
